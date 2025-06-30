@@ -1,0 +1,22 @@
+body{
+    background-color:aquamarine;
+    border: 2em solid black;
+    margin: 0;
+    padding: 3em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+li{
+    list-style-type: square;
+    color: black;
+    list-style-position: inside; 
+    list-style-image: url(right-arrow.png); /* tá substituindo o ponto de lista*/
+}
+
+a{
+    color:aliceblue;
+}
+a:hover{ /* animação quando passa o mouse*/
+    background-color: darkblue;
+    color:rgb(219, 219, 219);
+}

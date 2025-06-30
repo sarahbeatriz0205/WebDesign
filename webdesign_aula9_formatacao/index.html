@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LADES - Laboratório de Desenvolvimento de Software</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1><a href="">LADES</a></h1>
+
+        <form action="enviar.html"><!-- preenchimento e envio de dados para um banco de dados, email -->
+            <!-- action: nome do arquivo que recebe os dados -->
+            <label for="pesquisa">Pesquisa:</label><!-- label(rótulo, etiqueta); for: direciona o label PARA o form -->
+            <input type="search" id="pesquisa"><!--envio de dados--><!--id: faz relação com a label/id: identificador único de tag-->
+            <input type="submit" value="Buscar">
+
+        </form><!--devemos abrir e fechar a tag para todos os forms que abrirmos, individualmente-->
+    </header>
+
+    <main>
+        <form action="enviar.html">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Digite o nome" value="Sarah Beatriz"><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Digite o e-mail" value="email@email.com"><br><!--value: puxa o valor que tem dentro do banco de dados e exibe -->
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" placeholder="Digite a senha" value="tadsifrn"><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus neque officia praesentium ullam incidunt voluptatum amet fuga reprehenderit? Aliquid, omnis velit non vitae aperiam a deleniti amet quam sunt ut.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus neque officia praesentium ullam incidunt voluptatum amet fuga reprehenderit? Aliquid, omnis velit non vitae aperiam a deleniti amet quam sunt ut.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus neque officia praesentium ullam incidunt voluptatum amet fuga reprehenderit? Aliquid, omnis velit non vitae aperiam a deleniti amet quam sunt ut.</p>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por IFRN</p>
+    </footer>
+</body>
+</html>

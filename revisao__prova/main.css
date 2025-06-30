@@ -1,0 +1,45 @@
+body{
+    background-color: beige;/*cor de fundo*/
+    font-size: 1em; /*tamanho da fonte*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /*tipo de fonte*/
+}
+
+h1{
+    text-align: center;/*posiciona o texto*/
+}
+
+ul{
+    list-style-type: none; /*retira os marcadores*/
+    border: 10px double black; /*tamanho, forma, cor*/
+    text-align: center;
+    list-style-image: url(flecha.png)/*insere uma imagem como marcador de lista*/
+}
+
+a{
+    color: black;/*cor da fonte*/
+    text-decoration: double; /*põe uma linha no texto*/
+}
+
+a:hover{
+    color:brown;
+}
+
+figure{
+    text-align: center; /*permite que os itens da lista fiquem um ao lado do outro*/
+}
+
+nav li{
+    display: inline-block;
+    list-style-type: none;
+    border: 2px solid black;
+    text-decoration: none;
+    padding: 1em 2em;
+}
+
+table{
+    border: 1px solid black;
+}
+
+tr td{
+    border-collapse: collapse;
+}

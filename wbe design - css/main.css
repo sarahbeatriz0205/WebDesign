@@ -1,0 +1,13 @@
+
+body{ /* seletor: selecionar o que vai ser informado */
+        background-color: cadetblue; /*cor de fundo*/
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;/*tipo da fonte - listas com serifadas, sem serifas, caligráficas e decorativas */
+        font-size: 2em; /*tamanho da fonte - em, rem, %, pixels(px): unidade*/
+    }
+
+    h1{
+        text-align: center;/*posição do texto*/
+    }
+    li{
+        list-style-type: square; /*específico do seletor "lista"*/
+    }

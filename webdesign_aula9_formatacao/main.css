@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(205, 188, 168);
+}
+
+label{
+    /* deixar os forms alinhados */
+    display: inline-block;
+    /* width: largura */
+    width: 5em;
+    margin-bottom: 0.5em;
+}
+
+form{
+    border: 2px solid black;
+    padding: 2em;
+    margin: 2em;
+}
+
+input{
+    border: 0.5px solid black;
+    border-bottom: 1px solid black;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    background-color: beige;
+}
+
+input:focus{
+    /* borda específica pra focus e input */
+    outline: 1px solid rgb(101, 101, 79);
+    /* borda de destaque para o input, dá um foco */
+    /* focus: subclasse */
+}
+
+input:hover{
+    background-color: rgb(165, 165, 122);
+}
+
+/* especificação: */
+input[type='submit']{
+    border: none;
+    padding: 0.5em;
+    background-color: rgb(145, 145, 113);
+}

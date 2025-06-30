@@ -1,0 +1,12 @@
+body{
+    background-image: url(imagens/bg.png), url(imagens/bg.png); /*se não é conteúdo, é descartável. se for descartável, pôr no css. senão, pôr no html*/
+    /*pode pôr mais de uma imagem de background, separada por vírgula*/
+    background-repeat: repeat-x, repeat-y;
+    background-position: center, center;
+    background-size: cover, auto;
+}
+
+h1{
+    background-image: linear-gradient(90deg, rgb(22, 78, 156), rgb(138, 11, 143));
+    color:white;
+}

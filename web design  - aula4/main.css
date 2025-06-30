@@ -1,0 +1,17 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+ul{
+    text-align: center;
+}
+
+li{
+    display: inline-block; /*permite que os itens da lista fiquem um ao lado do outro*/
+    list-style-type: none; /*none: tira os marcadores de lista*/
+}
+
+figure{
+    text-align: center;
+}

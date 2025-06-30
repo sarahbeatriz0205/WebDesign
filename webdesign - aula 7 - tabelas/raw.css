@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+li.atual{
+    background-color: blueviolet;
+}
+
+.atual{
+    background-color: aqua;
+}
+
+li.atual a{ /*chamar uma class que declaramos*/
+    color: cadetblue;
+}
+
+table{
+    border-collapse: collapse;
+    max-width: 70em;
+    margin: 0 auto; /*primeiro valor colocado: borda externa de cima e de baixo; segundo: dois lados*/
+                    /*auto: põe automaticamente no centro*/
+}
+
+td, th{
+    padding: 1em;
+    border: 1px solid blue;
+}
+
+tr:nth-child(odd){ /*odd: ímpar, even: par ou números inteiros...*/
+    background-color: beige;
+}
