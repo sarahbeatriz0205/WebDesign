@@ -1,0 +1,64 @@
+<!-- PRÓXIMO PASSO: AO CLICAR NO BOTÃO SALVAR, IR DIRETO PARA A PÁGINA DE AGENDAMENTO -->
+<!-- ADICIONAR MAIS CSS -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgb(237, 237, 218);
+        }
+        div{
+            max-width: 40em;
+            margin: 2em auto;
+            border: 1px solid rgb(0, 0, 0);
+            padding: 2em;
+            background-color: rgb(208, 208, 194);
+        }
+            main{
+                max-width: 70rem;
+                margin: 2em auto;
+                padding: 5em;
+                box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+            <h2>FAÇA SEU CADASTRO</h2>
+
+            <form action="enviar.html">
+                <label for="nome">Nome Completo:</label><br>
+                <input type="text" id="nome" placeholder="Digite seu nome completo"><br>
+
+                <label for="nascimento">Data de Nascimento:</label><br>
+                <input type="datetime-local" id="nascimento"><br> <!--data/mês/ano-->
+
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" placeholder="Digite seu e-mail"><br>
+
+                <label for="cidade">Cidade:</label><br>
+                <input type="text" id="cidade" list="cidades">
+                <datalist id="cidades"> <!--cria uma lista com os options que eu colocar e permite que o usuário digite outro-->
+                    <option value="Macaiba">Macaíba</option>
+                    <option value="Natal">Natal</option>
+                    <option value="Parnamirim">Parnamirim</option>
+                    <option value="SaoGoncalo">São Gonçalo do Amarante</option>
+                </datalist><br>
+
+                <input type="submit" value="Salvar">
+            </form>
+        </div>
+    </main>
+    
+</body>
+</html>
