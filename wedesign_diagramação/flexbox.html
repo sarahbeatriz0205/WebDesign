@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX-BOX</title>
+    <style>
+        main{
+            /* https://flexbox.help/ - testa os atributos de display flex*/
+
+            display: flex; /*não altera o main, nesse caso, apenas o que está dentro; põe os elementos que tão dentro do main um do lado do outro*/
+            flex-wrap: wrap; /*quebra, como o <br>*/
+            /* gap: 2em; */
+            /* column-gap: ; */
+            row-gap: 2em;
+            justify-content: space-evenly; /*justify-content só é utilizado com display: flex*/
+            /* space-between: distribui uniformemente os cards; espaço apenas entre os cards, não nas pontas */
+            /* flex-start: padrão */
+            /* flex-end: */
+            /* space-around: permite espaço ao redor; dobra (baseado nos espaços laterais) o espaço entre os cards */
+            /* space-evenly: espaços igualados */
+            /* center: centraliza; não deixa espaço entre os cards, mas se pode pôr um gap pra espaçar */
+            border: 3px solid blue;
+            margin: 2em auto; /*1º valor: cima e embaixo; 2º valor: lados*/
+            max-width: 70em;
+        }
+
+        section{
+            border: 1px solid black;
+            width: 27em;
+        }
+    </style>
+</head>
+<body>
+    <h1>FLEX-BOX</h1>
+    <main>
+        <section>
+            <h2>Título</h2>
+            <figure>
+                <img src="imagens/superman.png" alt="">
+            </figure>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel velit aliquam ad est sequi, minus ducimus similique obcaecati harum quasi accusamus eum iusto saepe magni dolores non, maxime earum quod.</p>
+        </section>
+        <section>
+            <h2>Título</h2>
+            <figure>
+                <img src="imagens/superman.png" alt="">
+            </figure>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel velit aliquam ad est sequi, minus ducimus similique obcaecati harum quasi accusamus eum iusto saepe magni dolores non, maxime earum quod.</p>
+        </section>
+        <section>
+            <h2>Título</h2>
+            <figure>
+                <img src="imagens/superman.png" alt="">
+            </figure>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel velit aliquam ad est sequi, minus ducimus similique obcaecati harum quasi accusamus eum iusto saepe magni dolores non, maxime earum quod.</p>
+        </section>
+        <section>
+            <h2>Título</h2>
+            <figure>
+                <img src="imagens/superman.png" alt="">
+            </figure>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel velit aliquam ad est sequi, minus ducimus similique obcaecati harum quasi accusamus eum iusto saepe magni dolores non, maxime earum quod.</p>
+        </section>
+        <section>
+            <h2>Título</h2>
+            <figure>
+                <img src="imagens/superman.png" alt="">
+            </figure>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel velit aliquam ad est sequi, minus ducimus similique obcaecati harum quasi accusamus eum iusto saepe magni dolores non, maxime earum quod.</p>
+        </section>
+        <section>
+            <h2>Título</h2>
+            <figure>
+                <img src="imagens/superman.png" alt="">
+            </figure>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel velit aliquam ad est sequi, minus ducimus similique obcaecati harum quasi accusamus eum iusto saepe magni dolores non, maxime earum quod.</p>
+        </section>
+    </main>
+</body>
+</html>

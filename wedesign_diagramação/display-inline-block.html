@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIAGRAMAÇÃO COM HTML E CSSt</title>
+    <style>
+        div{
+            background-color: aqua;
+            width: 10em;
+            padding: 2em;
+        }
+        span{
+            background-color: deeppink;
+            width: 10em; /*elemento inline não permite definição de largura*/
+            padding: 2em;
+            display: inline-block; /*permite que outro elemento fique ao lado*; é o meio termo entre block e inline/
+            /* permite padding, largura e mais elementos ao lado; só o block não permite nada disso*/
+        }
+    </style>
+</head>
+<body>
+    <h1>display-inline-block</h1>
+    <div>TAG DE DIV</div> <!--esse texto deve estar dentro de uma tag de texto, não diretamente na tag div-->
+    alguma coisa <!-- texto embaixo da div porque a div funciona em block -->
+    
+    <span>TAG DE SPAN</span> texto aleatório<!--span: marcação inline (em linha)-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quidem ipsa sapiente, explicabo maxime itaque vitae voluptate neque voluptatum provident inventore voluptates pariatur porro quod repellendus magni placeat aperiam sit!</p>
+</body>
+</html>
