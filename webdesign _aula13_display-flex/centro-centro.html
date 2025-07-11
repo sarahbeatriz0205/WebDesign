@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CENTER-CENTER</title>
+    <style>
+        *{
+            /* retira os espaços padrão do navegador */
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center; /* centraliza o card no centro do centro da página; só funciona se eu tiver definido a altura anteriormente (height) */ 
+            height: 100vh; /*vh: height viewport(dispositivo*/
+            /* para trabalhar com 100vh, as margens precisam estar zeradas */
+        }
+        section{
+            border: 1px solid black;
+            height: 20rem;
+            width: 30rem;
+        }
+
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <p>texto</p>
+    </section>
+</body>
+</html>

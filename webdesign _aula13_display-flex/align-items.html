@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CENTER-CENTER</title>
+    <style>
+        *{
+            /* retira os espaços padrão do navegador */
+            margin: 0;
+            padding: 0;
+        }
+
+        section{
+            border: 1px solid black;
+            height: 20rem;
+            width: 30rem;
+            display: flex;
+            align-items: flex-end; /*para visualização dos itens com esse atributo, é necessário que haka mais texto*/
+            gap: 2em;
+        }
+
+        p{
+            background-color: aqua;
+            text-align: center;
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <p>texto a <br> texto texto texto texto texto</p>
+        <p>texto a <br> texto texto</p>
+        <p>texto a <br> texto texto</p>
+        <p>texto a <br> texto texto</p>
+        <p>texto a <br> texto texto</p>       
+    </section>
+</body>
+</html>

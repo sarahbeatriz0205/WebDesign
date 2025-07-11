@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Células Mescladas</title>
+    <style>
+        section{
+            display: flex;
+            flex-wrap: wrap;
+            background-color: aquamarine;
+        }
+        div{
+            background-color: coral;
+        }
+        div.mesclada{
+            background-color: pink;
+            flex-basis: 100%; /*largura flexível; com base no contêiner e os conteúdos presentes no card*/
+            /* flex basis 100% depende do flex wrap */
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="mesclada"><p>CÉLULA OCUPANDO 100%</p></div>
+        <div><p>CÉLULA</p></div>
+        <div><p>CÉLULA</p></div>
+        <div class="mesclada"><p>CÉLULA OCUPANDO 100%</p></div>
+        <div><p>CÉLULA</p></div>
+    </section>
+</body>
+</html>

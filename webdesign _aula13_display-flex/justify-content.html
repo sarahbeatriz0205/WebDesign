@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify-content</title>
+    <style>
+        section{
+            display: flex; /*lado a lado*/
+            /* flex-direction: column; por padrão, fica um abaixo do outro */
+            margin: 0 auto;
+            max-width: 50rem; /*trabalha juntamente com o margin para, também, centralizar o bloco*/
+            background-color: yellow;
+            justify-content: center; /*para eu pôr os cards no centro do bloco*/
+        }
+        div{
+            border: 1px solid black;
+            background-color: aqua;
+            width: 7rem; /*largura da div; espaço do card*/
+            text-align: center; /*alinha apenas o texto dentro do card, pois a caixa possui espaço suficiente para que se possa alinhá-lo*/
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div><p>TEXTO A</p></div>
+        <div><p>TEXTO B</p></div>
+        <div><p>TEXTO C</p></div>
+        <div><p>TEXTO D</p></div>
+        <div><p>TEXTO E</p></div>
+        <div><p>TEXTO F</p></div>
+    </section>
+</body>
+</html>
