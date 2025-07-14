@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'EA Font';
+    src: url(fontes/ea_font/EASPORTS15.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +13,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'EA Font', sans-serif;
 }
 
 main{
@@ -40,8 +46,14 @@ section{
 section h2{
     text-align:center;
     background-color: rgb(41, 176, 41);
+    color: white;
     margin-top: 1em;
     flex-basis: 100%;
+}
+
+h3{
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 section div{
