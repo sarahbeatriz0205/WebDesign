@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    text-align: center;
+    background-color: beige;
+    padding-top: 10em;
+    padding-bottom: 10em;
+}
+
+h1{
+    font-size: 4em;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aquamarine;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    margin-bottom: 6em;
+}
+
+p{
+    margin-bottom: 2em;
+}
+
+/* svg{
+    width: 2em;
+    height: 1em;
+} */
+
+select{
+    background-color: transparent;
+    border: none;
+}
