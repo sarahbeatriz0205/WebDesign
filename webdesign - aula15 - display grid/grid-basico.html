@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID-BÁSICO</title>
+    <style>
+        main{
+            display: grid; /*dentro do elemento pai*/
+            grid-template-areas: 
+            "y x"
+            "z x"
+            ;
+        }
+
+        section{
+            border: 1px solid black;
+        }
+
+        section.a{
+            grid-area: x;
+        }
+        section.b{
+            grid-area: y;
+        }
+        section.c{
+            grid-area: z;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="a">
+            <p>ITEM 1</p>
+        </section>
+        <section class="b">
+            <p>ITEM 2</p>
+        </section>
+        <section class="c">
+            <p>ITEM 3</p>
+        </section>
+    </main>
+    
+</body>
+</html>

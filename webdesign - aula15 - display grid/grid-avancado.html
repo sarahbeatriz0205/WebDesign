@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID-BÁSICO</title>
+    <style>
+        main{
+            display: grid; /*dentro do elemento pai*/
+            gap: 1em;
+            margin: 0 auto;
+            max-width: 70rem;
+            grid-template-columns: 200px 2fr 1fr; /*a qtd de valores deve ser equivalente à qtd de coolunas */
+            grid-template-rows: 5rem 15rem 5rem;
+            grid-template-areas: 
+            /* "nav y x"
+            "nav y z" é necessário que a qtd de elementos nas linhas sejam as mesmas */
+            "nav x x"
+            "nav y y" /* posso pôr um ponto caso eu queira uma célula vazia */
+            "nav z w"
+            /* não posso ter mesclagem diagonal, mesclagem em "L" */
+            ;
+        }
+
+        section, nav{
+            border: 1px solid black;
+        }
+
+        section.a{
+            grid-area: x;
+        }
+        section.b{
+            grid-area: y;
+        }
+        section.c{
+            grid-area: z;
+        }
+
+        section.d{
+            grid-area: w;
+        }
+
+        nav{
+            grid-area: nav;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <nav>
+            <p>NAV</p>
+        </nav>
+            <section class="a">
+                <p>ITEM 1</p>
+            </section>
+            <section class="b">
+                <p>ITEM 2</p>
+            </section>
+            <section class="c">
+                <p>ITEM 3</p>
+            </section>
+            <section class="d">
+                <p>ITEM 4</p>
+            </section>
+    </main>
+    
+</body>
+</html>
