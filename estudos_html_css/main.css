@@ -1,39 +1,84 @@
+@font-face {
+    font-family:'Minecraft';
+    src: url(fontes/minecraft/Minecraft.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
 }
 
+body{
+    font-family:'Minecraft';
+    /* background-color: rgb(93, 51, 100); */
+}
+
 section{
     text-align: center;
-    background-color: beige;
-    padding-top: 10em;
-    padding-bottom: 10em;
+    background-color: #3d3e7d;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    margin-top: 3rem;
 }
 
 h1{
     font-size: 4em;
 }
 
-nav{
+header{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #000000;
+}
+
+nav form{
     display: flex;
     justify-content: space-around;
+    column-gap: 2rem;
     align-items: center;
-    background-color: aquamarine;
-    padding-top: 1em;
-    padding-bottom: 2em;
-    margin-bottom: 6em;
 }
 
 p{
     margin-bottom: 2em;
 }
 
-/* svg{
-    width: 2em;
-    height: 1em;
-} */
-
 select{
     background-color: transparent;
     border: none;
+    color: white;
+    font-family: 'Minecraft';
+}
+
+section.projetos{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0;
+    padding-bottom: 0;
+}
+
+img{
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+button{
+    padding: 0.7rem;
+    font-family: 'Minecraft';
+}
+
+button a{
+    text-decoration: none;
+    color: black;
+}
+
+div{
+    border: 2px solid black;
+    border-radius: 2rem;
+    padding: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 10rem;
+    /* tamanho dos cards padronizados: */
+    width: 40rem;
+    height: 23rem;
+    background-color: white;
 }
