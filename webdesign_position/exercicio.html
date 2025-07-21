@@ -1,0 +1,111 @@
+<!-- EXERCÍCIO: HEADER E FOOTER FIXOS: incompleto -->
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position-fixed: vertical</title>
+
+    <style>
+        @font-face {
+            font-family: 'Minecraft';
+            src: url(fontes/Minecraft.ttf);
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /*não aumenta a largura caso haja um padding*/
+            font-family: 'Minecraft';
+        }
+
+        header{
+            /* precisa das coordenadas */
+            position: sticky;
+            top: 0;
+            background-color: rgb(14, 155, 14);
+            color: white;
+            /* width: 100vw; */
+        }
+
+        main{
+            background-color: rgb(127, 31, 31);
+            color: white;
+        }
+
+        footer{
+            position: sticky;
+            bottom: 0;
+            background-color: rgb(14, 155, 14);
+            color: white;
+        }
+
+        /* aplicado para todas as tags selecionadas */
+        header, main, footer{
+            border: 1px solid #999;
+            padding: 1rem;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>POSITION-STICKY</h1>
+        </header>
+        
+        <main>
+            <!-- p*5>lorem -->
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, possimus voluptas, sequi, ut voluptates esse eum beatae vel maiores velit placeat quibusdam iste asperiores voluptate reprehenderit. Et recusandae repellendus molestias.</p>
+            <p>Sit id doloribus, laudantium natus debitis illo fugit molestias vel fuga commodi quaerat et ab dolor vero error non? Deleniti commodi cumque harum ducimus labore autem non repellendus nobis. Rerum?</p>
+            <p>Totam reprehenderit facere mollitia quod sed nulla unde dolorem, consequatur autem tempore voluptates. Et dolorem eligendi, accusantium, aliquam culpa placeat at ducimus explicabo voluptatum quos, sapiente in dolore optio repellendus?</p>
+            <p>Enim ut repellat ipsam quia natus ab nesciunt officia, tempore ratione accusamus aperiam laboriosam dolores vero aliquam maiores! Veniam, ea! Asperiores, modi. Eligendi quas asperiores in obcaecati aspernatur sunt provident.</p>
+            <p>Harum at ducimus ut ex quae. Sint velit consectetur assumenda pariatur ea nemo natus perspiciatis quod itaque distinctio. Repellendus, veritatis recusandae ipsa dolorum esse doloribus porro temporibus soluta totam at.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, possimus voluptas, sequi, ut voluptates esse eum beatae vel maiores velit placeat quibusdam iste asperiores voluptate reprehenderit. Et recusandae repellendus molestias.</p>
+            <p>Sit id doloribus, laudantium natus debitis illo fugit molestias vel fuga commodi quaerat et ab dolor vero error non? Deleniti commodi cumque harum ducimus labore autem non repellendus nobis. Rerum?</p>
+            <p>Totam reprehenderit facere mollitia quod sed nulla unde dolorem, consequatur autem tempore voluptates. Et dolorem eligendi, accusantium, aliquam culpa placeat at ducimus explicabo voluptatum quos, sapiente in dolore optio repellendus?</p>
+            <p>Enim ut repellat ipsam quia natus ab nesciunt officia, tempore ratione accusamus aperiam laboriosam dolores vero aliquam maiores! Veniam, ea! Asperiores, modi. Eligendi quas asperiores in obcaecati aspernatur sunt provident.</p>
+            <p>Harum at ducimus ut ex quae. Sint velit consectetur assumenda pariatur ea nemo natus perspiciatis quod itaque distinctio. Repellendus, veritatis recusandae ipsa dolorum esse doloribus porro temporibus soluta totam at.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, possimus voluptas, sequi, ut voluptates esse eum beatae vel maiores velit placeat quibusdam iste asperiores voluptate reprehenderit. Et recusandae repellendus molestias.</p>
+            <p>Sit id doloribus, laudantium natus debitis illo fugit molestias vel fuga commodi quaerat et ab dolor vero error non? Deleniti commodi cumque harum ducimus labore autem non repellendus nobis. Rerum?</p>
+            <p>Totam reprehenderit facere mollitia quod sed nulla unde dolorem, consequatur autem tempore voluptates. Et dolorem eligendi, accusantium, aliquam culpa placeat at ducimus explicabo voluptatum quos, sapiente in dolore optio repellendus?</p>
+            <p>Enim ut repellat ipsam quia natus ab nesciunt officia, tempore ratione accusamus aperiam laboriosam dolores vero aliquam maiores! Veniam, ea! Asperiores, modi. Eligendi quas asperiores in obcaecati aspernatur sunt provident.</p>
+            <p>Harum at ducimus ut ex quae. Sint velit consectetur assumenda pariatur ea nemo natus perspiciatis quod itaque distinctio. Repellendus, veritatis recusandae ipsa dolorum esse doloribus porro temporibus soluta totam at.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, possimus voluptas, sequi, ut voluptates esse eum beatae vel maiores velit placeat quibusdam iste asperiores voluptate reprehenderit. Et recusandae repellendus molestias.</p>
+            <p>Sit id doloribus, laudantium natus debitis illo fugit molestias vel fuga commodi quaerat et ab dolor vero error non? Deleniti commodi cumque harum ducimus labore autem non repellendus nobis. Rerum?</p>
+            <p>Totam reprehenderit facere mollitia quod sed nulla unde dolorem, consequatur autem tempore voluptates. Et dolorem eligendi, accusantium, aliquam culpa placeat at ducimus explicabo voluptatum quos, sapiente in dolore optio repellendus?</p>
+            <p>Enim ut repellat ipsam quia natus ab nesciunt officia, tempore ratione accusamus aperiam laboriosam dolores vero aliquam maiores! Veniam, ea! Asperiores, modi. Eligendi quas asperiores in obcaecati aspernatur sunt provident.</p>
+            <p>Harum at ducimus ut ex quae. Sint velit consectetur assumenda pariatur ea nemo natus perspiciatis quod itaque distinctio. Repellendus, veritatis recusandae ipsa dolorum esse doloribus porro temporibus soluta totam at.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, possimus voluptas, sequi, ut voluptates esse eum beatae vel maiores velit placeat quibusdam iste asperiores voluptate reprehenderit. Et recusandae repellendus molestias.</p>
+            <p>Sit id doloribus, laudantium natus debitis illo fugit molestias vel fuga commodi quaerat et ab dolor vero error non? Deleniti commodi cumque harum ducimus labore autem non repellendus nobis. Rerum?</p>
+            <p>Totam reprehenderit facere mollitia quod sed nulla unde dolorem, consequatur autem tempore voluptates. Et dolorem eligendi, accusantium, aliquam culpa placeat at ducimus explicabo voluptatum quos, sapiente in dolore optio repellendus?</p>
+            <p>Enim ut repellat ipsam quia natus ab nesciunt officia, tempore ratione accusamus aperiam laboriosam dolores vero aliquam maiores! Veniam, ea! Asperiores, modi. Eligendi quas asperiores in obcaecati aspernatur sunt provident.</p>
+            <p>Harum at ducimus ut ex quae. Sint velit consectetur assumenda pariatur ea nemo natus perspiciatis quod itaque distinctio. Repellendus, veritatis recusandae ipsa dolorum esse doloribus porro temporibus soluta totam at.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, possimus voluptas, sequi, ut voluptates esse eum beatae vel maiores velit placeat quibusdam iste asperiores voluptate reprehenderit. Et recusandae repellendus molestias.</p>
+            <p>Sit id doloribus, laudantium natus debitis illo fugit molestias vel fuga commodi quaerat et ab dolor vero error non? Deleniti commodi cumque harum ducimus labore autem non repellendus nobis. Rerum?</p>
+            <p>Totam reprehenderit facere mollitia quod sed nulla unde dolorem, consequatur autem tempore voluptates. Et dolorem eligendi, accusantium, aliquam culpa placeat at ducimus explicabo voluptatum quos, sapiente in dolore optio repellendus?</p>
+            <p>Enim ut repellat ipsam quia natus ab nesciunt officia, tempore ratione accusamus aperiam laboriosam dolores vero aliquam maiores! Veniam, ea! Asperiores, modi. Eligendi quas asperiores in obcaecati aspernatur sunt provident.</p>
+            <p>Harum at ducimus ut ex quae. Sint velit consectetur assumenda pariatur ea nemo natus perspiciatis quod itaque distinctio. Repellendus, veritatis recusandae ipsa dolorum esse doloribus porro temporibus soluta totam at.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, possimus voluptas, sequi, ut voluptates esse eum beatae vel maiores velit placeat quibusdam iste asperiores voluptate reprehenderit. Et recusandae repellendus molestias.</p>
+            <p>Sit id doloribus, laudantium natus debitis illo fugit molestias vel fuga commodi quaerat et ab dolor vero error non? Deleniti commodi cumque harum ducimus labore autem non repellendus nobis. Rerum?</p>
+            <p>Totam reprehenderit facere mollitia quod sed nulla unde dolorem, consequatur autem tempore voluptates. Et dolorem eligendi, accusantium, aliquam culpa placeat at ducimus explicabo voluptatum quos, sapiente in dolore optio repellendus?</p>
+            <p>Enim ut repellat ipsam quia natus ab nesciunt officia, tempore ratione accusamus aperiam laboriosam dolores vero aliquam maiores! Veniam, ea! Asperiores, modi. Eligendi quas asperiores in obcaecati aspernatur sunt provident.</p>
+            <p>Harum at ducimus ut ex quae. Sint velit consectetur assumenda pariatur ea nemo natus perspiciatis quod itaque distinctio. Repellendus, veritatis recusandae ipsa dolorum esse doloribus porro temporibus soluta totam at.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, possimus voluptas, sequi, ut voluptates esse eum beatae vel maiores velit placeat quibusdam iste asperiores voluptate reprehenderit. Et recusandae repellendus molestias.</p>
+            <p>Sit id doloribus, laudantium natus debitis illo fugit molestias vel fuga commodi quaerat et ab dolor vero error non? Deleniti commodi cumque harum ducimus labore autem non repellendus nobis. Rerum?</p>
+            <p>Totam reprehenderit facere mollitia quod sed nulla unde dolorem, consequatur autem tempore voluptates. Et dolorem eligendi, accusantium, aliquam culpa placeat at ducimus explicabo voluptatum quos, sapiente in dolore optio repellendus?</p>
+            <p>Enim ut repellat ipsam quia natus ab nesciunt officia, tempore ratione accusamus aperiam laboriosam dolores vero aliquam maiores! Veniam, ea! Asperiores, modi. Eligendi quas asperiores in obcaecati aspernatur sunt provident.</p>
+            <p>Harum at ducimus ut ex quae. Sint velit consectetur assumenda pariatur ea nemo natus perspiciatis quod itaque distinctio. Repellendus, veritatis recusandae ipsa dolorum esse doloribus porro temporibus soluta totam at.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, possimus voluptas, sequi, ut voluptates esse eum beatae vel maiores velit placeat quibusdam iste asperiores voluptate reprehenderit. Et recusandae repellendus molestias.</p>
+            <p>Sit id doloribus, laudantium natus debitis illo fugit molestias vel fuga commodi quaerat et ab dolor vero error non? Deleniti commodi cumque harum ducimus labore autem non repellendus nobis. Rerum?</p>
+            <p>Totam reprehenderit facere mollitia quod sed nulla unde dolorem, consequatur autem tempore voluptates. Et dolorem eligendi, accusantium, aliquam culpa placeat at ducimus explicabo voluptatum quos, sapiente in dolore optio repellendus?</p>
+            <p>Enim ut repellat ipsam quia natus ab nesciunt officia, tempore ratione accusamus aperiam laboriosam dolores vero aliquam maiores! Veniam, ea! Asperiores, modi. Eligendi quas asperiores in obcaecati aspernatur sunt provident.</p>
+            <p>Harum at ducimus ut ex quae. Sint velit consectetur assumenda pariatur ea nemo natus perspiciatis quod itaque distinctio. Repellendus, veritatis recusandae ipsa dolorum esse doloribus porro temporibus soluta totam at.</p>
+        </main>
+
+        <footer>
+            <p>Desenvolvido por IFRN</p>
+        </footer>
+    </div>
+</body>
+</html>
