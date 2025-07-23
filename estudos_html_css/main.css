@@ -13,7 +13,12 @@ body{
     /* background-color: rgb(93, 51, 100); */
 }
 
+main{
+    width: 100%;
+}
+
 section{
+    width: 100%;
     text-align: center;
     background-color: #3d3e7d;
     padding-top: 10rem;
@@ -51,7 +56,8 @@ select{
 
 section.projetos{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 3rem;
     margin-top: 0;
     padding-bottom: 0;
 }
@@ -72,6 +78,7 @@ button a{
 }
 
 div{
+    width: 30rem;
     border: 2px solid black;
     border-radius: 2rem;
     padding: 2rem;
