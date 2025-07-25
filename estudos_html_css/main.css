@@ -57,8 +57,9 @@ select{
 section.projetos{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 3rem;
+    overflow: auto;
     margin-top: 0;
     padding-bottom: 0;
 }

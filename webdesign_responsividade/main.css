@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div#container{
+    max-width: 80rem;
+    margin: 1rem auto;
+    background-color: #dedede;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* caso o layout não tenha largura definida (fluido) */
+}
+img{
+    width: 100%;
+}
+main section{
+    border: 1px solid black;
+    padding: 1rem;
+    margin: 1rem;
+    flex-basis: 18%; /*define a largura de um elemento item*/
+}
+header{
+    margin-bottom: 2rem;
+    padding: 4rem;
+    background-image: url(imagens/imagem.png);
+    background-size: cover; /*background-size com esse atributo é similar ao width 100%*/
+    background-repeat: no-repeat;
+    background-position: top right; /*quando mudar o dispostivo, a imagem irá se reduzir e ficará nessa coordenada*/
+    background-attachment: fixed; /*ao usar a barra de rolagem, a imagem ficará na posição fixa*/
+}
+
+/*equivalente a um IF do CSS*/
+/*deve-se reescrever o código para essa condição*/
+/*a largura deve ser em pixel*/
+@media screen and (max-width:480px) { /*quando for menor que 479px, faça isso:*/
+    main section{
+        flex-basis: 40%;
+    }
+    header{
+        visibility: hidden; /*esconde determinado conteúdo*/
+        display: none; /*permite que o elemento ocultado não ocupe espaço na página*/
+    }
+}
+@media screen and (max-width:1024px) {
+    main{
+        background-color: deeppink;
+    }
+    main section{
+        flex-basis: 40%;
+    }
+}
+@media screen and (max-width:680px) {
+    main{
+        background-color: aqua;
+    }
+    main section{
+        flex-basis: 40%;
+    }
+}
