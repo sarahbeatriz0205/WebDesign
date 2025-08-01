@@ -1,1 +1,1 @@
-<img src="https://img.shields.io/badge/-HTML-E34F26?logo=html5&logoColor=white&style=for-the-badge" alt="HTML"/>
+<img src="https://img.shields.io/badge/-HTML-E34F26?logo=html5&logoColor=white&style=for-the-badge" alt="HTML"/>  <img src="https://img.shields.io/badge/-CSS-0082F0?logo=css&logoColor=white&style=for-the-badge" alt="badge css"/>
